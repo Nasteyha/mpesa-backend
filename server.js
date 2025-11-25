@@ -77,5 +77,7 @@ app.post("/callback", (req, res) => {
     console.log("M-PESA Callback:", req.body);
     res.json({ message: "Callback received" });
 });
-
+app.get('/', (req, res) => {
+  res.send('Daraja API is running 🚀');
+});
 app.listen(5000, () => console.log("Server running on port 5000"));
