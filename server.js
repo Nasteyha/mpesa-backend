@@ -46,7 +46,7 @@ app.post("/stkpush", async (req, res) => {
                 BusinessShortCode: shortCode,
                 Password: password,
                 Timestamp: timestamp,
-                TransactionType: "CustomerPayBillOnline",
+                TransactionType: "CustomerBuyGoodsOnline",
                 Amount: amount,
                 PartyA: phone,
                 PartyB: shortCode,
