@@ -51,7 +51,7 @@ app.post("/stkpush", async (req, res) => {
                 PartyA: phone,
                 PartyB: shortCode,
                 PhoneNumber: phone,
-                CallBackURL: "https://your-render-url.onrender.com/callback",
+                CallBackURL: "https://mpesa-backend-a7vc.onrender.com/callback",
                 AccountReference: "Order Payment",
                 TransactionDesc: "Test Payment"
             },
