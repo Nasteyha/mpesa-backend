@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: mpesa-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - key: DARAJA_CONSUMER_KEY
+        value: 19rFQG7WdVNAv2sw1tQAJ0lTTBzTRAKxxny0yFTdyUy2eJoD
+      - key: DARAJA_CONSUMER_SECRET
+        value: AJajfgiuxteS1c8vGYzWAxDQjGud2zNW8fQxGT2NWAlBNFQFGQSMIx9Zcxoz9KhE
+      - key: MPESA_SHORTCODE
+        value: 174379
+      - key: MPESA_PASSKEY
+        value: bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919
