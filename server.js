@@ -43,13 +43,13 @@ app.post("/stkpush", async (req, res) => {
         const response = await axios.post(
             "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest",
             {
-                BusinessShortCode: shortCode,
+                BusinessShortCode: "174379",
                 Password: password,
                 Timestamp: timestamp,
-                TransactionType: "CustomerBuyGoodsOnline",
+                TransactionType: "CustomerPayBillOnline",
                 Amount: amount,
                 PartyA: phone,
-                PartyB: shortCode,
+                PartyB: "174379",
                 PhoneNumber: phone,
                 CallBackURL: "https://mpesa-backend-a7vc.onrender.com/callback",
                 AccountReference: "Order Payment",
